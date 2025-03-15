@@ -25,6 +25,14 @@
 			<figcaption>Рис. 2 - Изображение с альтернативным текстом.</figcaption>
 		  </figure>
 
+		  <figure>
+			<img src="images/redcat.jpg" 
+			srcset="images/redcat.jpg-400.jpg 400w, images/redcat.jpg-800.jpg 800w"
+			sizes="(max-width: 600px) 400px, 800px"
+			alt="Картинка не открывается">
+			<figcaption>Рис. 2 .</figcaption>
+		  </figure>
+
 		<h2>Размеры изображения</h2>
 		<p>Атрибуты <code>width</code> и <code>height</code> задают размеры области изображения. Если оба атрибута не заданы, размер изображения будет определен после его полной загрузки, после чего размеры области будут изменены для размещения содержания картинки.
 		
@@ -49,9 +57,9 @@
 		</p>
 
 		<figure>
-			<img src="images/redcat.jpg" 
-			srcset="images/redcat.jpg-400.jpg 400w, images/redcat.jpg-800.jpg 800w"
-			sizes="(max-width: 600px) 400px, 800px"
+			<img src="images/mushroom.jpg" 
+			srcset="images/mushroom_landscape.jpg 600w, images/mushroom_portrait.jpg 300w"
+			sizes="(max-width: 400px) 300px, 600px"
 			alt="Гибкое изображение">
 			<figcaption>Рис. 5 - Гибкое изображение.</figcaption>
 		  </figure>
@@ -63,7 +71,7 @@
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 
 		<figure>
-			<img src="images/muscle.png" alt="Рисунок 6">
+			<img src="images/light.gif" alt="Рисунок 6">
 			<figcaption>Рис. 6 - Изображение с подписью.</figcaption>
 		  </figure>
 
