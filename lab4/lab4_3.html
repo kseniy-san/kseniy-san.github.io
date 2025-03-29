@@ -17,24 +17,22 @@ html {
              list-style: none;
    }
    
-   .menu li {
-    list-style: none; 
-    position: relative; 
-    
-   }
-   .menu li a ::before {
+   .menu li ::before {
+    width: 16px;
+    height: 16px;
     content: "";
-    background: url('pic/minus.gif') no-repeat
-}
-
+    display: inline-block;
+    background: url('css_sprites.png') no-repeat
+   }
+   
    .menu li a {
     color: rgb(53, 122, 201);
     padding: 20px;
-    background: url('pic/minus.gif') no-repeat left;
+    background-position: 0 -16px;
    }
    
    .menu li a:hover {
-    background: url('pic/plus.gif') no-repeat left;
+    background-position: 0 0px;
    }
    
    .menu li ul {
@@ -42,7 +40,7 @@ html {
    }
    
    .menu li li a{
-    background: url('pic/point.gif') no-repeat left;
+    background-position: 0 16px;
    }
 	</style>
 </head>
