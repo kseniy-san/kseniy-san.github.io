@@ -17,31 +17,31 @@ html {
              list-style: none;
    }
    
-   .menu li ::before {
+   .menu li::before {
     width: 16px;
     height: 16px;
     content: "";
     display: inline-block;
-    background: url('css_sprites.png') no-repeat
+    background: url('css_sprites.png') -10px -10px;
    }
    
    .menu li a {
     color: rgb(53, 122, 201);
     padding: 20px;
-    background-position: 0 -16px;
    }
    
-   .menu li a:hover {
-    background-position: 0 0px;
-   }
    
    .menu li ul {
-    padding-bottom: 20px;
-   }
-   
-   .menu li li a{
-    background-position: 0 16px;
-   }
+       padding-bottom: 20px;
+    }
+    
+    .menu li li::before {
+        background: url('css_sprites.png') -10px -82px;
+    }
+    
+    .menu li li::before:hover {
+     background: url('css_sprites.png') -10px -46px;
+    }
 	</style>
 </head>
 <body>
