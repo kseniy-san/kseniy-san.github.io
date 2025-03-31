@@ -25,7 +25,6 @@
       font-size: 16px;
       width: 16px;
       margin-right: 5px;
-      content: "\f192";
     }
     
     .menu li {
@@ -36,19 +35,16 @@
       padding-bottom: 20px;
     }
     
-    /* Закрытый элемент (по умолчанию) */
-    .menu li > a::before {
-      content: "\f0fe"; /* square-plus */
+    .menu li a::before {
+      content: "\f147"; 
     }
     
-    /* Раскрытый элемент (при наведении) */
-    .menu li > a:hover::before {
-      content: "\f277"; /* square-minus */
+    .menu li a:hover::before {
+      content: "\f0fe"; 
     }
     
-    /* Простой элемент (вложенные пункты) */
-    .menu li li > a::before {
-      content: "\f192"; /* circle-dot */
+    .menu li li a::before {
+      content: "\f192"; 
     }
   </style>
 </head>
