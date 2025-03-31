@@ -3,45 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>Оформление вертикального меню</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-html {
-     background: #f0f0f0;
-   }
-   
-   .menu {
-     width: 300px;
-     background: #fff;
-   }
-     
-   .menu ul { 
-             list-style: none;
-   }
-   
-   .menu li a::before {
-    width: 16px;
-    height: 16px;
-    content: "";
-    display: inline-block;
-    background: url('css_sprites.png') -10px -10px;
-   }
-   
-   .menu li  {
-    color: rgb(53, 122, 201);
-   }
-   
-   
-   .menu li ul {
-       padding-bottom: 20px;
+    html {
+      background: #f0f0f0;
     }
     
-    .menu li a:hover::before {
-        background: url('css_sprites.png') -10px -46px;
+    .menu {
+      width: 300px;
+      background: #fff;
+    }
+      
+    .menu ul { 
+      list-style: none;
+      padding-left: 20px; 
     }
     
-    .menu li li a::before {
-     background: url('css_sprites.png') -10px -82px;
+    .menu li a::before {
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-size: 16px;
+      width: 16px;
+      margin-right: 5px;
+      content: "\f192";
     }
- </style>
+    
+    .menu li {
+      color: rgb(53, 122, 201);
+    }
+    
+    .menu li ul {
+      padding-bottom: 20px;
+    }
+    
+    /* Закрытый элемент (по умолчанию) */
+    .menu li > a::before {
+      content: "\f0fe"; /* square-plus */
+    }
+    
+    /* Раскрытый элемент (при наведении) */
+    .menu li > a:hover::before {
+      content: "\f277"; /* square-minus */
+    }
+    
+    /* Простой элемент (вложенные пункты) */
+    .menu li li > a::before {
+      content: "\f192"; /* circle-dot */
+    }
+  </style>
 </head>
 <body>
  <nav class="menu">
