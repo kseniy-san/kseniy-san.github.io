@@ -1,74 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Использование inline-block при построении колонок</title>
+    <title>Адаптивные колонки через inline-block</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
-            text-align: center;
+            font-size: 0; 
+            min-width: 1000px; 
+            overflow-x: auto;
         }
 
         .container {
-            text-align: left;
-            font-size: 0;
-            display: block;
+            white-space: nowrap; 
+        }
+
+        #left, #center, #right {
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-size: 16px;
+            white-space: normal; 
         }
 
         #left {
-            width: 200px;
             background: #ccf;
-            display: inline-block;
-            vertical-align: top;
+            width: 200px;
             padding: 10px;
-            font-size: 16px;
         }
 
         #center {
-            width: calc(100%-600px);
             background: #cfc;
-            display: inline-block;
-            vertical-align: top;
+            width: 600px; 
             padding: 10px;
-            font-size: 16px;
         }
 
         #right {
-            width: 200px;
             background: #fcc;
-            display: inline-block;
-            vertical-align: top;
+            width: 200px;
             padding: 10px;
-            font-size: 16px;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div id="left">left<br>left<br>left<br>left<br>left</div>
-        <div id="center">center text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text text text text text text text
-            text text text text text text text text text text text text text text text </div>
+        <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
         <div id="right">right<br>right<br>right<br>right</div>
     </div>
 </body>
-
 </html>
