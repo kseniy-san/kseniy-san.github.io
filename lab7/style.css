@@ -1,9 +1,69 @@
-header {
-  background: #4A90E2; 
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+.header{
+    /* background: #4A90E2;  */
+    background-image: url('sky.png');
+    width: 100%;
+    max-width: 1212px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 700;
+    padding-top: 56px;
+    padding: 20px 0;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.logo_img{
+    display: block;
+    width: 114px;
+    height: 114px;
+    background-image: url(apple-icon-114x114.png);
+    margin-left: 25px;
+}
+
+.logo_text{
+    font-size: 16px;
+    color: #202020;
+    margin-left: 10px;
+}
+
+.nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: 14px;
+    align-items: center;
+}
+
+.nav>li{
+    margin-left: 37px;
+    color: #fff;
+    margin-right: 25px;
+}
+
+.nav>li>a{
+    text-decoration: none;
+    color: #202020;
+}
+
+.nav_btn{
+    background-color: #4c79f3;
+    border-radius: 5px;
+    padding: 6px 14px;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
 /* Нижняя часть шапки */
 #header-bottom {
   background: #E6E6FA; /* Лавандовый цвет */
@@ -37,22 +97,4 @@ footer {
   object-fit: cover; /* изображение будет обрезаться для заполнения заданного размера */
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
 
-.logo_img{
-    display: block;
-    width: 114px;
-    height: 114px;
-    background-image: url(apple-icon-114x114.png);
-    margin-right: 25px;
-}
-
-.logo_text{
-    font-size: 24px;
-    color: #202020;
-
-}
