@@ -1,0 +1,39 @@
+/* Верхняя шапка */
+header {
+  background: #4A90E2; /* Синий цвет */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Нижняя часть шапки */
+#header-bottom {
+  background: #E6E6FA; /* Лавандовый цвет */
+  padding: 10px 0;
+  text-align: center;
+}
+/* Блок об услугах компании */
+#main {
+  padding: 20px 0;
+}
+/* Блок с методами компании */
+#method {
+  padding: 20px 0;
+  background: #F3E5F5; /* Светлый лавандовый */
+}
+/* Блок с портфолио компании */
+#work {
+  padding: 20px 0;
+}
+/* Подвал */
+footer {
+  background: #4A90E2; /* Синий цвет */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Класс для одинакового размера изображений */
+.img-same {
+  width: 300px;      /* или иные значения, сохраняя пропорцию 3:4 */
+  height: 400px;
+  object-fit: cover; /* изображение будет обрезаться для заполнения заданного размера */
+}
