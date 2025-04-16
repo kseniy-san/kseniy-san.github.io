@@ -1,8 +1,6 @@
 .header{
-    /* background: #4A90E2;  */
     background-image: url('sky.png');
-    width: 100%;
-    max-width: 1212px;
+ 
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
