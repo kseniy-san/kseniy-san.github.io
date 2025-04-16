@@ -1,6 +1,5 @@
-/* Верхняя шапка */
 header {
-  background: #4A90E2; /* Синий цвет */
+  background: #4A90E2; 
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -36,4 +35,24 @@ footer {
   width: 300px;      /* или иные значения, сохраняя пропорцию 3:4 */
   height: 400px;
   object-fit: cover; /* изображение будет обрезаться для заполнения заданного размера */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo_img{
+    display: block;
+    width: 114px;
+    height: 114px;
+    background-image: url(apple-icon-114x114.png);
+    margin-right: 25px;
+}
+
+.logo_text{
+    font-size: 24px;
+    color: #202020;
+
 }
