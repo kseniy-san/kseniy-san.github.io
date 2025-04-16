@@ -1,6 +1,9 @@
+body {
+    background-color: rgba(156, 253, 152, 0.384); 
+}
+
 .header{
     background-image: url('sky.png');
- 
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,9 +65,8 @@
     font-weight: 700;
 }
 
-footer {
-  background: #4A90E2; /* Синий цвет */
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('sky.png');
 }
